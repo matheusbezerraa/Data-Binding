@@ -1,0 +1,18 @@
+<h1>{{ mensagem }}</h1>
+<a [href]="link">Clique aqui</a>
+<p (click)="alterarCor()" [style.backgroundColor]="corDefundo" [style.color]="corDafonte">Alterar cor</p>
+
+<select [(ngModel)]="opcaoSelecionada">
+    <option value="opcao1">Texto 1</option>
+    <option value="opcao2">Texto 2</option>
+    <option value="opcao3">Texto 3</option>
+    <option value="opcao4">Texto 4</option>
+  </select>
+  
+  <div *ngIf="opcaoSelecionada === 'opcao1'">Texto da Opção 1 Texto da Opção 1 Texto da Opção 1 Texto da Opção 1 Texto da Opção 1</div>
+  <div *ngIf="opcaoSelecionada === 'opcao2'">Texto da Opção 2 Texto da Opção 2 Texto da Opção 2 Texto da Opção 2 Texto da Opção 2 </div>
+  <div *ngIf="opcaoSelecionada === 'opcao3'">Texto da Opção 3 Texto da Opção 3 Texto da Opção 3 Texto da Opção 3 Texto da Opção 3</div>
+  <div *ngIf="opcaoSelecionada === 'opcao4'">Texto da Opção 4 Texto da Opção 4 Texto da Opção 4 Texto da Opção 4 Texto da Opção 4</div>
+  
+    
+  
